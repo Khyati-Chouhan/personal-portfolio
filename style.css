@@ -8,13 +8,13 @@
     font-family: "Syne", sans-serif;
 }
 :root{
-    --bg-color: white;
-    --second-bg-color: rgba(94, 171, 234, 0.659);
+    --bg-color: rgb(209, 164, 116);
+    --second-bg-color: rgba(206, 119, 33, 0.659);
     --text-clor: #ffffff;
-    --main-color: green;
+    --main-color: rgb(237, 103, 103);
     --other-color: brown;
-    --alt-color: lightgreen;
-    --ann-color: rgb(125, 212, 125);
+    --alt-color: rgb(22, 5, 5);
+    --ann-color: rgb(0, 0, 0);
 
     --h1-font: 6rem;
     --h2-font: 3.8rem;
@@ -48,12 +48,12 @@ header{
     display: inline-block;
     font-size: 25px;
     font-weight: 300;
-    color: black; /*var(--other-color)*/
+    color: rgb(0, 0, 0); /*var(--other-color)*/
     margin: 0 30px;
     transition: all .6s ease;
 }
 .menulist a:hover{
-    color: green;  /*var(--text-color)*/
+    color: rgb(255, 255, 255);  /*var(--text-color)*/
 }
 .menulist a:active{
     color: var(--text-color);   
@@ -65,14 +65,14 @@ header{
 .menu-btn{
      display: inline-block;
      padding: 15px 25px;
-     background: linear-gradient(135deg, var(--main-color) 0%, #2984c9f1 100%);
+     background: linear-gradient(135deg, var(--main-color) 0%, #a11515f1 100%);
      color: var(--bg-color);
      font-size: 20px;
      font-weight: 500;
      border-radius: 13px;
 }
 .menu-btn:hover{
-    background: linear-gradient(135deg, #2984c9f1 0%, var(--main-color) 100%);
+    background: linear-gradient(135deg, #a11515f1 0%, var(--main-color) 100%);
 }
 #menu-icon{
     z-index: 10001;
@@ -87,7 +87,7 @@ section{
 .home{
     height: 100vh;
     width: 100%;
-    background: url(doe.png);
+    background: url(bg.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -116,7 +116,7 @@ section{
     font-size: 2rem;
 }
 .home-text h1 span{
-    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #2984c9f1 100%);
+    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #a11515f1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -160,7 +160,7 @@ section{
 .btn2{
     display: inline-block;
     padding: 18px 35px;
-    background: linear-gradient(135deg, var(--main-color) 0%, #2984c9f1 100%);
+    background: linear-gradient(135deg, var(--main-color) 0%, #a11515f1 100%);
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -188,7 +188,7 @@ header.sticky{
     max-width: 550px;
     border-radius: 20%;
     object-fit: cover;
-    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #2984c9f1 100%);
+    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #a11515f1 100%);
     border: 5px solid var(--main-color);    
 }
 .about-text h2{
@@ -197,7 +197,7 @@ font-size: var(--h2-font);
 }
 
 .about-text h2 span{
-    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #2984c9f1 100%);
+    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #a11515f1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -227,7 +227,7 @@ tab-titles{
     font-size: var(--h2-font);
 }
 .mid-text h2 span{
-    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #2984c9f1 100%);
+    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #a11515f1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -337,7 +337,7 @@ form textarea::placeholder{
   form .submit-btn{
     display: inline-block;
     padding: 18px 25px;
-    background: linear-gradient(135deg,#2984c9f1 0%, var(--main-color) 100% );
+    background: linear-gradient(135deg,#a11515f1 0%, var(--main-color) 100% );
     color: var(--bg-color);
     font-size: 17px;
     font-weight: 500;
@@ -366,7 +366,7 @@ form textarea::placeholder{
     justify-content: center;
     height: 50px;
     width: 50px;
-    background: linear-gradient(135deg,#2984c9f1 0%, var(--main-color) 100% );
+    background: linear-gradient(135deg,#a11515f1 0%, var(--main-color) 100% );
     color: var(--bg-color);
     border-radius: 1.7rem;
     font-size: 22px;
