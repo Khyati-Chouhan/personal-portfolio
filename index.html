@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!---------box icons link--------->
+    <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+      <!------remix icons link------>
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+<!------google fonts link------>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!------header------>
+   <header class="sticky">
+    <a href="#" class="logo"><img src="logo.png"></a>
+
+    <ul class="menulist">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </ul>
+    <div class="menu-right">
+        <a href="#contact" class="menu-btn">
+            <span>Let's Talk</span>
+            <i class="ri-message-3-line"></i>
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+   </header>
+<!------home------>
+<section class="home" id="home">
+    <div class="home-text">
+        <a href="#" class="h-line">
+            <i class="ri-shining-2-line"></i>
+            <span>This is Khyati Chouhan</span>
+        </a>
+        <h1>Aspiring Web Developer<br>SDE Enthusiast</h1>
+        <div class="social-icons">
+        <a href="https://www.linkedin.com/in/khyati-chouhan-b5526a282/"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://github.com/Khyati-Chouhan"><i class="ri-github-fill"></i></a>
+        <a href="mailto:"k.chouhan@iitg.ac.in"><i class="ri-mail-fill"></i></a>
+    </div>
+
+    <div class="h-btn">
+        <a href="#portfolio" class="btn1">
+            My Work
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+         <a href="Khyati Chouhan.pdf" download class="btn2">
+            Download CV
+            <i class="ri-download-2-line"></i>
+         </a>
+     </div>
+    </div>  
+</section>
+
+<!---about----->
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="aboutme.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring web developer and SDE enthusiast, currently in my 3rd year of BTech in Electronics and Communication Engineering. Passionate about coding and building innovative web solutions. Seeking an internship to gain hands-on experience and contribute to exciting projects. Always excited to learn and grow in the field of software development.
+
+
+
+                </p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                <p class="tab-links" onclick="opentab('education', this)">Education</p>
+                <p class="tab-links" onclick="opentab('extra', this)">ExtraCurricular</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>C/C++ and JavaScript</span><br>Programming and DSA</li>
+                    <li><span>HTML CSS Node.JS</span><br>Web Development</li>
+                    <li><span>MongoDb</span><br>Database Management</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-Present</span><br>BTech in ECE from IIT Guwahati</li>
+                    <li><span>Senior Secondary</span><br>St. Patrick's, Jodhpur(CBSE)</li>
+                    <li><span>Secondary</span><br>St. Patrick's, Jodhpur(CBSE)</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="extra">
+                <ul>
+                    <li><span>Xpressions and Cadence</span><br>Active memeber of the dramatics and dance clubs at IIT Guwahati</li>
+                    <li><span>Sports</span><br>Enjoy playing Lawn Tennis</li>
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, element){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        element.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Latest Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="air.jpg">
+                <div class="layer">
+                    <h3>Airline Resrvation System</h3>
+                    <p>
+                    Designed and implemented backend functionalities of an airline booking system and collaborated with frontend developers for efficient working.
+                    </p>
+                    <a href="#"><i class="fas fa-github"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="calc.png">
+                <div class="layer">
+                    <h3>Analog Calculator</h3>
+                    <p>
+                    Designed and implemented an Analog Calculator using Arduino Mega and Bluetooth, enabling wireless data input. Also included a C++ code implementation for BODMAS operations, ensuring accurate and structured mathematical calculations.
+
+ 
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="CnA.jpg">
+                <div class="layer">
+                    <h3>Analyzing the Future of Automobiles</h3>
+                    <p>
+                    Conducted a comprehensive study on the future of automobiles through data-driven insights, focusing on emerging trends in electric and autonomous vehicles, consumer behavior, regulatory impacts and so on.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<!------contact------>
+
+<section class="contact" id="contact">
+    <div class="contact-main">
+            <h1>Let's Talk</h1>
+            <div class="email">
+                <p>Email:</p> 
+                <h6>chouhankhyati71@gmail.com</h6>
+            </div>
+
+            <div class="num">
+           <p>Call:</p>
+        <h6>9928572857</h6>
+       </div>
+
+     <div class="social-icons">
+    <a href="https://www.linkedin.com/in/khyati-chouhan-b5526a282/"><i class="ri-linkedin-fill"></i></a>
+    <a href="https://github.com/Khyati-Chouhan"><i class="ri-github-fill"></i></a>
+    <a href="mailto:"k.chouhan@iitg.ac.in"><i class="ri-mail-fill"></i></a>
+    </div>
+
+</div>
+
+<form class="contact-form">
+<form name="submit-to-google-sheet">
+<input type="text" placeholder="Your Name" required>
+<input type="email" name="" placeholder="Email Address..." required>
+<textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+<input type="submit" value="Submit now" class="submit-btn">
+</form>
+</form>
+</section>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygSyYGmQjK4ZnGOfAJhB8UdSafAqeQOiicVgfW8KHHSTDskt2MkklqDhpA64G9K2d4/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   
+
+
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright Khyati Chouhan All Rights Reserved.</p>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+    </div>
+</div>
+        
+     
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+     
+    <!------js file------>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
